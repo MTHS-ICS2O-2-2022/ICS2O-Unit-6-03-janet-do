@@ -1,4 +1,54 @@
-/* Created by: Mr. Coxall
+/* Created by: Janet Do
 * Created on: Sep 2020
 * This file contains the CSS for index.html
 */
+.mdl-ripple {
+  background: #ff853f;
+  opacity: 0.001;
+}
+
+.mdl-layout__header-row {
+  justify-content: center;
+  padding: 0;
+}
+
+.mdl-layout__content {
+  padding-left: 15pt;
+  padding-right: 15pt;
+  padding-top: 15pt;
+}
+
+.page-content {
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+}
+
+.mdl-layout-title {
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+}
+
+.mdl-button {
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+}
+
+body {
+  background-color: #ffc15d;
+}
+
+.answer {
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+}
+
+#fanta-bottle {
+  display: block;
+  margin-left: 800px;
+  margin-right: 200px;
+  margin-top: -200px;
+}
