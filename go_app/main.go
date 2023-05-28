@@ -18,8 +18,8 @@ type WeatherData struct {
 	} `json:"main"`
 }
 
-func weather2(URLAddress string) {
-	response, err := http.Get(URLAddress)
+func weather2(urlAddress string) {
+	response, err := http.Get(urlAddress)
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -43,11 +43,11 @@ func weather2(URLAddress string) {
 	temperature2 := temperature1 - 273.15
 
 	fmt.Printf("The temperature outside is %.2f °C!\n", temperature2)
-  fmt.Println("\nDone.")
+	fmt.Println("\nDone.")
 }
 
 func main() {
-	URLAddress := "https://api.openweathermap.org/data/2.5/weather?lat=45.4211435&lon=-75.6900574&appid=fe1d80e1e103cff8c6afd190cad23fa5"
-	weather2(URLAddress)
+	urlAddress := "https://api.openweathermap.org/data/2.5/weather?lat=45.4211435&lon=-75.6900574&appid=fe1d80e1e103cff8c6afd190cad23fa5"
+	weather2(urlAddress)
 }
 
