@@ -2,7 +2,7 @@
 //
 // Created by: Janet Do
 // Created on: Sep 2020
-// This file lets you check the weather 
+// This file lets you check the weather
 
 package main
 
