@@ -55,4 +55,5 @@ func main() {
 	temperature2 := temperature1 - 273.15
 
 	fmt.Println("The temperature outside is", fmt.Sprintf("%.2f", temperature2), "°C!")
+	fmt.Println("\nDone.")
 }
