@@ -17,9 +17,14 @@ type WeatherData struct {
 	Main struct {
 		Temp float64 `json:"temp"`
 	} `json:"main"`
+	Weather []struct {
+		Icon string `json:"icon"`
+	} `json:"weather"`
 }
 
-func weather2(urlAddress string) {
+func main() {
+	urlAddress := "https://api.openweathermap.org/data/2.5/weather?lat=45.4211435&lon=-75.6900574&appid=fe1d80e1e103cff8c6afd190cad23fa5"
+
 	response, err := http.Get(urlAddress)
 	if err != nil {
 		fmt.Println(err)
@@ -43,13 +48,12 @@ func weather2(urlAddress string) {
 	temperature1 := jsonData.Main.Temp
 	temperature2 := temperature1 - 273.15
 
-	fmt.Printf("The temperature outside is %.2f °C!\n", temperature2)
-	fmt.Println("\nDone.")
+	image := jsonData.Weather[0].Icon
+
+	fmt.Println(jsonData.Weather)
+	fmt.Println("<img src='https://openweathermap.org/img/wn/" + image + "@2x.png' alt='Icon' width='10%'><br><h5>")
+	fmt.Println("The temperature outside is", fmt.Sprintf("%.2f", temperature2), "°C!")
 }
 
-func main() {
-	urlAddress := "https://api.openweathermap.org/data/2.5/weather?lat=45.4211435&lon=-75.6900574&appid=fe1d80e1e103cff8c6afd190cad23fa5"
-	weather2(urlAddress)
-}
 
 
