@@ -13,6 +13,7 @@
 package main
 
 import (
+	"goimports -w main.go"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
