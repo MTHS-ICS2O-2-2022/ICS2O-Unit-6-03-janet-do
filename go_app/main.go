@@ -13,7 +13,6 @@
 package main
 
 import (
-	"goimports -w main.go"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -55,15 +54,5 @@ func main() {
 	temperature1 := jsonData.Main.Temp
 	temperature2 := temperature1 - 273.15
 
-	image := jsonData.Weather[0].Icon
-
-	fmt.Println(jsonData.Weather)
-	fmt.Println("<img src='https://openweathermap.org/img/wn/" + image + "@2x.png' alt='Icon' width='10%'><br><h5>")
 	fmt.Println("The temperature outside is", fmt.Sprintf("%.2f", temperature2), "°C!")
 }
-
-
-
-
-
-
