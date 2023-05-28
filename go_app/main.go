@@ -4,6 +4,12 @@
 // Created on: Sep 2020
 // This file lets you check the weather
 
+// Copyright (c) 2020 Janet Do All rights reserved
+//
+// Created by: Janet Do
+// Created on: Sep 2020
+// This file lets you check the weather
+
 package main
 
 import (
@@ -54,6 +60,9 @@ func main() {
 	fmt.Println("<img src='https://openweathermap.org/img/wn/" + image + "@2x.png' alt='Icon' width='10%'><br><h5>")
 	fmt.Println("The temperature outside is", fmt.Sprintf("%.2f", temperature2), "°C!")
 }
+
+
+
 
 
 
