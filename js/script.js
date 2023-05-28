@@ -35,7 +35,7 @@ const weather2 = async (URLAddress) => {
       ; (">")
 
     document.getElementById("theTemp").innerHTML =
-      "The tempurature outside is " + tempature2.toFixed(2) + " °C!"
+      "The temperature outside is " + tempature2.toFixed(2) + " °C!"
   } catch (err) {
     console.log(err)
   }
